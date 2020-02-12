@@ -13,7 +13,6 @@ import io
 import binascii
 import signal
 import base64
-import i18n
 from urllib.parse import quote, unquote
 from copy import copy
 from collections import OrderedDict, defaultdict
@@ -29,11 +28,13 @@ import websockets
 from gevent import monkey; monkey.patch_all()
 import bottle
 from bottle import route, static_file, get, post, request, template, response
-from bottle_i18n import I18NPlugin, I18NMiddleware, i18n_defaults, i18n_view, i18n_template
 from bs4 import BeautifulSoup
 
-from assembler import parse as ASMparser
-from bytecodeinterpreter import BCInterpreter
+
+from epater import i18n
+from epater.bottle_i18n import I18NPlugin, I18NMiddleware, i18n_defaults, i18n_view, i18n_template
+from epater.assembler import parse as ASMparser
+from epater.bytecodeinterpreter import BCInterpreter
 
 
 with open("emailpass.txt") as fhdl:

@@ -3,7 +3,8 @@ from collections import defaultdict
 from copy import deepcopy
 
 from ply.lex import LexError
-from tokenizer import ParserError, lexer
+
+from .tokenizer import ParserError, lexer
 from . import yaccparser
 from .settings import getSetting
 from .i18n import I18n as _

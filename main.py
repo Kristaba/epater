@@ -2,8 +2,8 @@ import argparse
 import time
 import math
 
-from assembler import parse as ASMparser
-from bytecodeinterpreter import BCInterpreter
+from epater.assembler import parse as ASMparser
+from epater.bytecodeinterpreter import BCInterpreter
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='EPATER, ARM emulator')
