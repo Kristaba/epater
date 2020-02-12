@@ -2,9 +2,9 @@ import operator
 import struct
 from enum import Enum
 from collections import defaultdict, namedtuple, deque
-from simulatorOps.abstractOp import ExecutionException
 
-from settings import getSetting
+from .simulatorOps.abstractOp import ExecutionException
+from .settings import getSetting
 
 class Breakpoint(Exception):
     """

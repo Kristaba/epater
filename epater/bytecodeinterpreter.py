@@ -1,10 +1,10 @@
 from struct import unpack
-
-from settings import getSetting
-from simulator import Simulator
-from simulator import MultipleErrors
 import operator
-from components import Breakpoint, ComponentException
+
+from .settings import getSetting
+from .simulator import Simulator
+from .simulator import MultipleErrors
+from .components import Breakpoint, ComponentException
 
 
 class BCInterpreter:

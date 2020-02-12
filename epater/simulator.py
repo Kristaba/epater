@@ -5,12 +5,12 @@ import time
 from enum import Enum
 from collections import defaultdict, namedtuple, deque
 
-from settings import getSetting
-from components import Registers, Memory, Breakpoint, ComponentException
-from history import History
-from simulatorOps.utils import checkMask
-from simulatorOps import *
-from simulatorOps.abstractOp import ExecutionException
+from .settings import getSetting
+from .components import Registers, Memory, Breakpoint, ComponentException
+from .history import History
+from .simulatorOps.utils import checkMask
+from .simulatorOps import *
+from .simulatorOps.abstractOp import ExecutionException
 
 class MultipleErrors(Exception):
     """

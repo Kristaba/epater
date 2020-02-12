@@ -1,5 +1,8 @@
 import polib
 
+# FIXME localization must be adapted for setuptools distribution...
+# Maybe check some hints here: https://stackoverflow.com/questions/53285634/is-there-a-portable-way-to-provide-localization-of-a-package-distributed-on-pypi
+
 languages = [
     'en',
     'fr',

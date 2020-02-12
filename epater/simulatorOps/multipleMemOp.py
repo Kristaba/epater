@@ -4,8 +4,8 @@ from enum import Enum
 from collections import defaultdict, namedtuple, deque
 from functools import reduce
 
-import simulatorOps.utils as utils
-from simulatorOps.abstractOp import AbstractOp, ExecutionException
+from . import utils
+from .abstractOp import AbstractOp, ExecutionException
 
 class MultipleMemOp(AbstractOp):
     saveStateKeys = frozenset(("condition", 

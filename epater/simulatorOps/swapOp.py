@@ -3,8 +3,8 @@ import struct
 from enum import Enum
 from collections import defaultdict, namedtuple, deque 
 
-import simulatorOps.utils as utils
-from simulatorOps.abstractOp import AbstractOp, ExecutionException
+from . import utils
+from .abstractOp import AbstractOp, ExecutionException
 
 class SwapOp(AbstractOp):
     saveStateKeys = frozenset(("condition",

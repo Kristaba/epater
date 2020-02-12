@@ -4,9 +4,9 @@ from copy import deepcopy
 
 from ply.lex import LexError
 from tokenizer import ParserError, lexer
-import yaccparser
-from settings import getSetting
-from i18n import I18n as _
+from . import yaccparser
+from .settings import getSetting
+from .i18n import I18n as _
 
 memory_configs = {
     "simulation": {"INTVEC": 0x00, "CODE": 0x80, "DATA": 0x1000},

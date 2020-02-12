@@ -6,5 +6,5 @@ from bs4 import BeautifulSoup
 import bottle
 from bottle import route, get, template, static_file, request
 
-from mainweb import get
+from ..mainweb import get
 application = get()

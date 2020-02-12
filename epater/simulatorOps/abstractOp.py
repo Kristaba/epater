@@ -3,7 +3,7 @@ import struct
 from enum import Enum
 from collections import defaultdict, namedtuple, deque 
 
-import simulatorOps.utils as utils
+from . import utils
 
 class ExecutionException(Exception):
     def __init__(self, text, internalError=False):

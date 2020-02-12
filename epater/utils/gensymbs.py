@@ -1,4 +1,4 @@
-import simulatorOps.utils as utils
+from ..simulatorOps import utils
 
 """
 Gensymbs is a script used to generate a regular expression to highlight all instructions.
